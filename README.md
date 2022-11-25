@@ -93,6 +93,9 @@ The devices below are fully feature supported by OpenRazer, which means all avai
 | Razer Blade 17 (2022)                         |  1532:028B  |
 | Razer DeathStalker V2                         |  1532:0295  |
 | Razer BlackWidow V3 Tenkeyless                |  1532:0A24  |
+| Razer DeathStalker V2 Pro (Wired)             |  1532:0292  |
+| Razer DeathStalker V2 Pro (Wireless)          |  1532:0290  |
+
 
 ### Mice
 | Device                                        | USB VID:PID |
@@ -173,6 +176,8 @@ The devices below are fully feature supported by OpenRazer, which means all avai
 | Razer Viper V2 Pro (Wireless)                 |  1532:00A6  |
 | Razer DeathAdder V3 Pro (Wired)               |  1532:00B6  |
 | Razer DeathAdder V3 Pro (Wireless)            |  1532:00B7  |
+| Razer Basilisk V3 Pro (Wired)                 |  1532:00aa  |
+| Razer Basilisk V3 Pro (Wireless)              |  1532:00ab  |
 
 ### Mousemats
 | Device                                        | USB VID:PID |
