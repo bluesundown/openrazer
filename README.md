@@ -176,8 +176,8 @@ The devices below are fully feature supported by OpenRazer, which means all avai
 | Razer Viper V2 Pro (Wireless)                 |  1532:00A6  |
 | Razer DeathAdder V3 Pro (Wired)               |  1532:00B6  |
 | Razer DeathAdder V3 Pro (Wireless)            |  1532:00B7  |
-| Razer Basilisk V3 Pro (Wired)                 |  1532:00aa  |
-| Razer Basilisk V3 Pro (Wireless)              |  1532:00ab  |
+| Razer Basilisk V3 Pro (Wired)                 |  1532:00AA  |
+| Razer Basilisk V3 Pro (Wireless)              |  1532:00AB  |
 
 ### Mousemats
 | Device                                        | USB VID:PID |

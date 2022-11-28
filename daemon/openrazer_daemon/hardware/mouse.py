@@ -3158,7 +3158,7 @@ class RazerBasiliskV3ProWired(__RazerDeviceSpecialBrightnessSuspend):
     EVENT_FILE_REGEX = re.compile(r'.*Razer_Basilisk_V3_Pro_000000000000-if0(1|2)-event-kbd')
 
     USB_VID = 0x1532
-    USB_PID = 0x00aa
+    USB_PID = 0x00AA
     HAS_MATRIX = True
     MATRIX_DIMS = [1, 11]
     METHODS = ['get_device_type_mouse',
@@ -3240,4 +3240,4 @@ class RazerBasiliskV3ProWireless(RazerBasiliskV3ProWired):
     Class for the Razer Basilisk V3 Pro (Wireless)
     """
 
-    USB_PID = 0x00ab
+    USB_PID = 0x00AB
