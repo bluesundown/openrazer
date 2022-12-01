@@ -3160,7 +3160,7 @@ class RazerBasiliskV3ProWired(__RazerDeviceSpecialBrightnessSuspend):
     USB_VID = 0x1532
     USB_PID = 0x00AA
     HAS_MATRIX = True
-    MATRIX_DIMS = [1, 11]
+    MATRIX_DIMS = [1, 13]
     METHODS = ['get_device_type_mouse',
                'max_dpi', 'get_dpi_xy', 'set_dpi_xy', 'get_dpi_stages', 'set_dpi_stages',
                'get_poll_rate', 'set_poll_rate',
