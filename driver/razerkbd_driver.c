@@ -277,7 +277,7 @@ static int razer_get_report(struct usb_device *usb_dev, struct razer_report *req
     case USB_DEVICE_ID_RAZER_DEATHSTALKER_V2_PRO_WIRELESS:
         report_index = 0x02;
         response_index = 0x02;
-        return razer_get_usb_response(usb_dev, report_index, request_report, response_index, response_report, RAZER_DEATHSTALKER_V2_WIRELESS_WAIT_MIN_US, RAZER_DEATHSTALKER_V2_WIRELESS_WAIT_MAX_US);
+        return razer_get_usb_response(usb_dev, report_index, request, response_index, response, RAZER_DEATHSTALKER_V2_WIRELESS_WAIT_MIN_US, RAZER_DEATHSTALKER_V2_WIRELESS_WAIT_MAX_US);
         break;
     default:
         report_index = 0x01;
@@ -376,7 +376,6 @@ static void razer_set_device_mode(struct usb_device *usb_dev, unsigned char mode
         break;
     case USB_DEVICE_ID_RAZER_BLACKWIDOW_V3_MINI_WIRELESS:
     case USB_DEVICE_ID_RAZER_DEATHSTALKER_V2_PRO_WIRELESS:
-    case USB_DEVICE_ID_RAZER_BLACKWIDOW_V3_MINI_WIRELESS:
         request.transaction_id.id = 0x9F;
         break;
     }
@@ -403,7 +402,6 @@ static ssize_t razer_attr_read_charge_level(struct device *dev, struct device_at
         break;
     case USB_DEVICE_ID_RAZER_BLACKWIDOW_V3_MINI_WIRELESS:
     case USB_DEVICE_ID_RAZER_DEATHSTALKER_V2_PRO_WIRELESS:
-    case USB_DEVICE_ID_RAZER_BLACKWIDOW_V3_MINI_WIRELESS:
         request.transaction_id.id = 0x9f;
         break;
     case USB_DEVICE_ID_RAZER_BLACKWIDOW_V3_PRO_WIRED:
@@ -435,7 +433,6 @@ static ssize_t razer_attr_read_charge_status(struct device *dev, struct device_a
         break;
     case USB_DEVICE_ID_RAZER_BLACKWIDOW_V3_MINI_WIRELESS:
     case USB_DEVICE_ID_RAZER_DEATHSTALKER_V2_PRO_WIRELESS:
-    case USB_DEVICE_ID_RAZER_BLACKWIDOW_V3_MINI_WIRELESS:
         request.transaction_id.id = 0x9f;
         break;
     case USB_DEVICE_ID_RAZER_BLACKWIDOW_V3_PRO_WIRED:
@@ -1497,7 +1494,7 @@ static ssize_t razer_attr_write_matrix_effect_wave(struct device *dev, struct de
     case USB_DEVICE_ID_RAZER_BLACKWIDOW_V3_MINI_WIRELESS:
     case USB_DEVICE_ID_RAZER_DEATHSTALKER_V2_PRO_WIRELESS:
         request = razer_chroma_extended_matrix_effect_wave(VARSTORE, BACKLIGHT_LED, direction);
-        request.transaction_id.id = 0x9F
+        request.transaction_id.id = 0x9F;
         break;
 
     default:

@@ -1761,7 +1761,7 @@ class RazerDeathAdderV3ProWireless(RazerDeathAdderV3ProWired):
     USB_PID = 0x00B7
 
 
-class RazerBasiliskV3ProWired(__RazerDeviceSpecialBrightnessSuspend):
+class RazerBasiliskV3ProWired(__RazerDevice):
     """
     Class for the Razer Basilisk V3 Pro (Wired)
     """
